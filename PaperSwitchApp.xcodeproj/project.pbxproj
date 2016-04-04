@@ -12,9 +12,12 @@
 		BA2881CB1CB292D300CB8328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2881C91CB292D300CB8328 /* Main.storyboard */; };
 		BA2881CD1CB292D300CB8328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2881CC1CB292D300CB8328 /* Assets.xcassets */; };
 		BA2881D01CB292D300CB8328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2881CE1CB292D300CB8328 /* LaunchScreen.storyboard */; };
+		E7AF59A972704BA9E4577BDA /* Pods_PaperSwitchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC92727798AB3547C36D3774 /* Pods_PaperSwitchApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B32CCE2A169FBAD01B2C90E /* Pods-PaperSwitchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperSwitchApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperSwitchApp/Pods-PaperSwitchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		881D512D270319DE015F7B85 /* Pods-PaperSwitchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperSwitchApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperSwitchApp/Pods-PaperSwitchApp.release.xcconfig"; sourceTree = "<group>"; };
 		BA2881C21CB292D300CB8328 /* PaperSwitchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperSwitchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2881C51CB292D300CB8328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA2881C71CB292D300CB8328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BA2881CC1CB292D300CB8328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA2881CF1CB292D300CB8328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2881D11CB292D300CB8328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC92727798AB3547C36D3774 /* Pods_PaperSwitchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaperSwitchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AF59A972704BA9E4577BDA /* Pods_PaperSwitchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E9EFC4B48AD857289153169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC92727798AB3547C36D3774 /* Pods_PaperSwitchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BEE35943B2C2B8017680D32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B32CCE2A169FBAD01B2C90E /* Pods-PaperSwitchApp.debug.xcconfig */,
+				881D512D270319DE015F7B85 /* Pods-PaperSwitchApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA2881B91CB292D300CB8328 = {
 			isa = PBXGroup;
 			children = (
 				BA2881C41CB292D300CB8328 /* PaperSwitchApp */,
 				BA2881C31CB292D300CB8328 /* Products */,
+				9BEE35943B2C2B8017680D32 /* Pods */,
+				1E9EFC4B48AD857289153169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA2881D41CB292D300CB8328 /* Build configuration list for PBXNativeTarget "PaperSwitchApp" */;
 			buildPhases = (
+				EB9C6EBF127B54B6BFCD66B8 /* Check Pods Manifest.lock */,
 				BA2881BE1CB292D300CB8328 /* Sources */,
 				BA2881BF1CB292D300CB8328 /* Frameworks */,
 				BA2881C01CB292D300CB8328 /* Resources */,
+				2F3C06AE1A3EE98766087B26 /* Embed Pods Frameworks */,
+				B151D74881011880DCF2F2C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					BA2881C11CB292D300CB8328 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 83W65ZB2H6;
 					};
 				};
 			};
@@ -129,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F3C06AE1A3EE98766087B26 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperSwitchApp/Pods-PaperSwitchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B151D74881011880DCF2F2C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperSwitchApp/Pods-PaperSwitchApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB9C6EBF127B54B6BFCD66B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA2881BE1CB292D300CB8328 /* Sources */ = {
@@ -247,8 +323,10 @@
 		};
 		BA2881D51CB292D300CB8328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B32CCE2A169FBAD01B2C90E /* Pods-PaperSwitchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaperSwitchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MK.PaperSwitchApp;
@@ -258,8 +336,10 @@
 		};
 		BA2881D61CB292D300CB8328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881D512D270319DE015F7B85 /* Pods-PaperSwitchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaperSwitchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MK.PaperSwitchApp;
@@ -286,6 +366,7 @@
 				BA2881D61CB292D300CB8328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
