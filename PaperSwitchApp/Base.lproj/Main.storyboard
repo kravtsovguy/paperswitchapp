@@ -18,20 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jE-HK-Fie">
-                                <rect key="frame" x="0.0" y="88" width="320" height="128"/>
+                                <rect key="frame" x="0.0" y="88" width="320" height="200"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Dx-Wa-ocL" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
-                                        <rect key="frame" x="136" y="48" width="51" height="31"/>
+                                        <rect key="frame" x="136" y="124" width="51" height="31"/>
                                         <color key="onTintColor" red="0.2612809852036061" green="0.44965863133298456" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interesting idea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mw-n2-Ozu">
+                                        <rect key="frame" x="0.0" y="39" width="320" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="mLabel" destination="1Mw-n2-Ozu" id="fuE-aY-NiX"/>
                         <outlet property="mSwitch" destination="8Dx-Wa-ocL" id="xFr-u7-evn"/>
                     </connections>
                 </viewController>

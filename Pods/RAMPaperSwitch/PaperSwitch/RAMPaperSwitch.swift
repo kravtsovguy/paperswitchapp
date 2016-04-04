@@ -24,10 +24,10 @@ import UIKit
 
 public class RAMPaperSwitch: UISwitch {
     
-    @IBInspectable var duration: Double = 0.35
+    @IBInspectable public var duration: Double = 0.35
     
-    var animationDidStartClosure = {(onAnimation: Bool) -> Void in }
-    var animationDidStopClosure = {(onAnimation: Bool, finished: Bool) -> Void in }
+    public var animationDidStartClosure = {(onAnimation: Bool) -> Void in }
+    public var animationDidStopClosure = {(onAnimation: Bool, finished: Bool) -> Void in }
     
     private var shape: CAShapeLayer! = CAShapeLayer()
     private var radius: CGFloat = 0.0
