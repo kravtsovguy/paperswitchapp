@@ -1,0 +1,10 @@
+PODS:
+  - RAMPaperSwitch (0.0.3)
+
+DEPENDENCIES:
+  - RAMPaperSwitch (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  RAMPaperSwitch: a9fc5d6812e998ad26f1c8f67fb33114b5904129
+
+COCOAPODS: 0.39.0
